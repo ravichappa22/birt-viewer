@@ -14,7 +14,7 @@ public class MenusAction extends HttpServlet {
         req.getSession().setAttribute("name", "Ravi");
         req.getSession().setAttribute("test", "testvalue");
         RequestDispatcher dispatcher =
-                req.getRequestDispatcher("buildMenus.jsp");
+                req.getRequestDispatcher("/jsp/buildMenus.jsp");
         dispatcher.forward( req, resp );
         super.doGet(req, resp);
     }
